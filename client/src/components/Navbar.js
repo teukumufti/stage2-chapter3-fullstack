@@ -14,6 +14,11 @@ import {
 const Navbar = (props) => {
   const navigate = useNavigate();
 
+  function changeTheme() {
+    let elemet = document.body;
+    elemet.classList.toggle("light-theme");
+  }
+
   const [state, dispatch] = useContext(UserContext);
 
   const logout = () => {
@@ -90,6 +95,16 @@ const Navbar = (props) => {
               <Nav.Link onClick={logout} className="text-navbar">
                 Logout
               </Nav.Link>
+
+              {/* change theme */}
+              <Nav.Link>
+                <i
+                  class="bx bxs-circle fs-5 mt-1 change-theme cursor-pointer "
+                  id="theme-button"
+                  onClick={changeTheme}
+                ></i>
+              </Nav.Link>
+              {/*  */}
             </Nav>
           </NavbarComp.Collapse>
         </Container>

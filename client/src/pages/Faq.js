@@ -24,14 +24,14 @@ const Faq = () => {
           <Col className="detailFaq">
             <h1> Shipping & Returns </h1>
             <div>
-              <Button
+              <h6
                 onClick={() => setOpen(!open)}
                 aria-controls="example-collapse-text"
                 aria-expanded={open}
                 className="faq-button"
               >
                 <span>Are your products available ?</span>
-              </Button>
+              </h6>
               <Collapse in={open}>
                 <div id="example-collapse-text" className="ms-3 mt-2">
                   It really depends on where you’d like your order shipped! All
@@ -42,14 +42,14 @@ const Faq = () => {
               </Collapse>
             </div>
             <div>
-              <Button
+              <h6
                 onClick={() => setOpen(!open)}
                 aria-controls="example-collapse-text"
                 aria-expanded={open}
-                className="faq-button"
+                className="faq-button2"
               >
                 <span>How can i shipping ?</span>
-              </Button>
+              </h6>
               <Collapse in={open}>
                 <div id="example-collapse-text" className="ms-3 mt-2">
                   It really depends on where you’d like your order shipped! All
